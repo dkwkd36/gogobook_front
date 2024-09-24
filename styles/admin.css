@@ -12,6 +12,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+	list-style: none;
 }
 
 
@@ -290,4 +291,52 @@ img {
   .btn_right button:hover::after {
 	top: 0px;
 	left: 0px;
+  }
+
+  /* 페이지 */
+  .page_wrapper {
+	width: 100%;
+	margin-top: 40px;
+  }
+  
+  .pagination {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+  }
+  
+  .page-item i {
+	font-size: 10px;
+	color: black;
+  }
+  
+  .page-item a {
+	font-size: 12px;
+  }
+  
+  .page-item .page-select {
+	font-weight: bold;
+  }
+
+  .search {
+	position: relative;
+	width: 300px;
+  }
+  
+  .search input {
+	width: 100%;
+	border: 1px solid #bbb;
+	border-radius: 8px;
+	padding: 10px 12px;
+	font-size: 14px;
+	margin-bottom: 15px;
+  }
+  
+  .search ion-icon {
+	position : absolute;
+	width: 17px;
+	top: 10px;
+	right: 12px;
+	margin: 0;
   }

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/admin.css" />
+	<script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+	<title>관리자 페이지</title>
+</head>
+<body>
+	<div class="container">
+		<div class="sidemenu">
+				<div class="sidemenu__header">
+					<div class="logo">
+						<a href="admin.html">
+							<img src="image/logo2.png" alt="고고북" />
+						  </a>
+					</div>
+				</div>
+				<div class="sidemenu__body">
+					<div class="body__detail">
+						<a href="admin.html">
+							<ion-icon name="people-outline"></ion-icon>
+							회원관리
+						</a>
+					</div>
+					<div class="body__detail">
+						<a href="admin_book.html">
+							<ion-icon name="book-outline"></ion-icon>
+							상품관리
+						</a>
+					</div>
+					<div class="body__detail">
+						<a href="admin_stock.html">
+							<ion-icon name="albums-outline"></ion-icon>
+							재고관리
+						</a>
+					</div>
+
+				</div>
+				<div class="sidemenu__footer">
+					<div class="logout">
+						<a href="login.html">
+							<ion-icon name="log-out-outline"></ion-icon>
+							로그아웃
+						</a>
+					</div>
+				</div>
+		</div>
+		<div class="main">
+			
+
+
+				 <!-- WISHLIST-->
+				 <div class="container">
+					<div class="wrapper">
+					  <div class="title">
+						<h2>회원관리</h2>
+					  </div>
+					  <div class="wishlist_wrapper">
+						<table>
+						  <colgroup>
+							<col style="width: 27px" />
+							<col style="width: 92px" />
+							<col style="width: auto" />
+							<col style="width: 105px" />
+							<col style="width: 110px" />
+						  </colgroup>
+						  <thead>
+							<tr>
+							  <th>
+								<input
+								  type="checkbox"
+								  name="book"
+								  onclick="selectAll(this)"
+								/>
+							  </th>
+							  <th>이미지</th>
+							  <th>상품정보</th>
+							  <th>판매가</th>
+							  <th>선택</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td>
+								<input
+								  type="checkbox"
+								  name="book"
+								  onclick="checkSelectAll(this)"
+								/>
+							  </td>
+							  <td class="thumb">
+								<a href="#">
+								  <img src="image/book.jpeg" />
+								</a>
+							  </td>
+							  <td class="info">
+								<a href="#"> 이주 작은 습관의 힘 </a>
+							  </td>
+							  <td class="price">&#8361;14,000</td>
+							  <td class="button">
+								<a href="#">주문하기</a>
+								<a href="#">장바구니</a>
+								<a href="#">삭제</a>
+							  </td>
+							</tr>
+							<tr>
+							  <td>
+								<input
+								  type="checkbox"
+								  name="book"
+								  onclick="checkSelectAll(this)"
+								/>
+							  </td>
+							  <td class="thumb">
+								<a href="#">
+								  <img src="image/book.jpeg" />
+								</a>
+							  </td>
+							  <td class="info">
+								<a href="#"> 이주 작은 습관의 힘 </a>
+							  </td>
+							  <td class="price">&#8361;14,000</td>
+							  <td class="button">
+								<a href="#">주문하기</a>
+								<a href="#">장바구니</a>
+								<a href="#">삭제</a>
+							  </td>
+							</tr>
+							<tr>
+							  <td>
+								<input
+								  type="checkbox"
+								  name="book"
+								  onclick="checkSelectAll(this)"
+								/>
+							  </td>
+							  <td class="thumb">
+								<a href="#">
+								  <img src="image/book.jpeg" />
+								</a>
+							  </td>
+							  <td class="info">
+								<a href="#"> 이주 작은 습관의 힘 </a>
+							  </td>
+							  <td class="price">&#8361;14,000</td>
+							  <td class="button">
+								<a href="#">주문하기</a>
+								<a href="#">장바구니</a>
+								<a href="#">삭제</a>
+							  </td>
+							</tr>
+							<tr>
+							  <td>
+								<input
+								  type="checkbox"
+								  name="book"
+								  onclick="checkSelectAll(this)"
+								/>
+							  </td>
+							  <td class="thumb">
+								<a href="#">
+								  <img src="image/book.jpeg" />
+								</a>
+							  </td>
+							  <td class="info">
+								<a href="#"> 이주 작은 습관의 힘 </a>
+							  </td>
+							  <td class="price">&#8361;14,000</td>
+							  <td class="button">
+								<a href="#">주문하기</a>
+								<a href="#">장바구니</a>
+								<a href="#">삭제</a>
+							  </td>
+							</tr>
+						  </tbody>
+						</table>
+			  
+						<div class="btn_wrapper">
+						  <div class="btn_left">
+							<p>선택상품을</p>
+							<a href="wishlist.html">삭제하기</a>
+							<a href="wishlist.html">장바구니 담기</a>
+						  </div>
+						  <div class="btn_right">
+							<a href="wishlist.html">전체상품주문</a>
+							<a href="wishlist.html">관심상품 비우기</a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			
+		</div>
+	</div>
+</body>
+</html>

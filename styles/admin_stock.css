@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Orbit&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: 'CookieRun-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	background-color: white;
+}
+
+.sidemenu {
+	display: flex;
+	flex-direction: column;
+	width: 266px;
+	background: #02b4a9;
+	padding: 30px;
+	margin: 20px 10px;
+	border-radius: 20px;
+	box-shadow: 0 25px 35px rgba(0, 0, 0, 0.2);
+}
+
+.sidemenu a {
+	color: white;
+}
+
+
+.sidemenu__header{
+	display: flex;
+	flex-direction: column;
+	width: 218px;
+	height: 56px;
+	margin-bottom: 50px;
+}
+
+.logo {
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.sidemenu__body{
+	display:flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+
+.body__detail{
+	font-family: 'CookieRun-Regular';
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap:10px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	padding-left:16px;
+	width: 218px;
+	height: 56px;
+	color: white;
+}
+
+.body__detail:hover {
+	background-color: white;
+	border-radius: 28px;
+}
+
+.body__detail:hover a {
+	color: #02b4a9;
+}
+
+.sidemenu__footer{
+	font-family: 'CookieRun-Regular';
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap:10px;
+	font-size: 20px;
+	padding-left:16px;
+	width: 218px;
+	height: 56px;
+	color: white;
+	
+
+}
+
+.sidemenu__footer:hover {
+	background-color: white;
+	border-radius: 28px;
+
+}
+
+.sidemenu__footer:hover a {
+	color: #02b4a9;
+}

@@ -198,6 +198,7 @@ img {
 	color: #353535;
 	font-weight: 300;
 	vertical-align: middle;
+	font-family: 'CookieRun-Regular';
   }
 
   tbody tr {
@@ -232,6 +233,7 @@ img {
 	font-size: 14px;
 	font-weight: bold;
 	text-align: center;
+	font-family: 'CookieRun-Regular';
   }
   
   .button {
@@ -328,10 +330,12 @@ img {
   
   .page-item a {
 	font-size: 12px;
+
   }
   
   .page-item .page-select {
 	font-weight: bold;
+	
   }
 
   .search {

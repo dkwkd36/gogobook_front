@@ -12,6 +12,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+	list-style: none;
 }
 
 
@@ -19,7 +20,7 @@
 	width: 100vw;
 	height: 100vh;
 	display: flex;
-	background-color: white;
+	
 }
 
 .sidemenu {
@@ -35,8 +36,15 @@
 
 .sidemenu a {
 	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
 }
 
+.sidemenu a ion-icon {
+	font-size: 25px;
+}
 
 .sidemenu__header{
 	display: flex;
@@ -86,6 +94,17 @@ img {
 	color: #02b4a9;
 }
 
+.body__detail.active {
+	background-color: #32bbb2;
+	border-radius: 28px;
+	box-shadow: -5px -5px 10px #02c1b4, 5px 5px 8px #029086;
+}
+
+.body__detail.active:hover {
+	background-color: white;
+	border-radius: 28px;
+}
+
 .sidemenu__footer{
 	font-family: 'CookieRun-Regular';
 	display: flex;
@@ -110,3 +129,245 @@ img {
 .sidemenu__footer:hover a {
 	color: #02b4a9;
 }
+
+.main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.main__header{
+	font-family: 'CookieRun-Regular';
+	font-size: 25px;
+	display:flex;
+	flex-direction: row;
+	margin-top: 60px;
+	
+}
+
+
+  /* WISHLIST */
+  
+  .container {
+	margin-top: 5px;
+	width: 100%;
+	
+  }
+  
+  .wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .title {
+	width: 266px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	
+	
+  }
+  
+  .title h2 {
+	font-family: 'CookieRun-Regular';
+	font-size: 24px;
+	text-align: center;
+  }
+  
+  .wishlist_wrapper {
+	width: 85%;
+  }
+  
+  table {
+	width: 100%;
+	border-top: 1px solid #d7d5d5;
+	border-bottom: 1px solid #d7d5d5;
+	border-collapse: collapse;
+	
+  }
+  
+  thead th {
+	padding: 15px 0;
+	font-size: 12px;
+	color: #353535;
+	font-weight: 300;
+	vertical-align: middle;
+	font-family: 'CookieRun-Regular';
+	font-weight: bold;
+  }
+
+  tbody tr {
+	border-radius: 5px;
+  }
+
+  tbody tr:nth-child(odd) {
+	background-color: #e9e9e9;
+	
+  }
+
+  
+  tbody td {
+	padding: 15px 10px;
+	color: #353535;
+	vertical-align: middle;
+	font-family: 'CookieRun-Regular';
+	text-align: center;
+	font-size: 14px;
+  }
+
+  tbody td:nth-child(4) {
+	width: 15%;
+  }
+
+  tbody td:nth-child(5) {
+	width: 40%;
+  }
+
+
+  tbody td a{
+	color: #353535;
+	font-family: 'CookieRun-Regular';
+  }
+
+  
+  tbody img {
+	width: 60px;
+	box-shadow: 6px 3px 3px #aaa;
+
+  }
+  
+  tbody .info,
+  tbody .price {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'CookieRun-Regular';
+  }
+
+  tbody .stock,
+  tbody .like {
+	font-weight: bold;
+  }
+  
+  .button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .button a {
+	width: 90px;
+	margin: 1px 0;
+	border: 1px solid #dfdfdf;
+	background: #fff;
+	font-size: 13px;
+	font-weight: 300;
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 8px;
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+	font-family: 'CookieRun-Regular';
+	
+  }
+  
+  .button a:hover {
+	border: 1px solid #01d5f1;
+	color: #02b4a9;
+  }
+    
+  
+  .btn_right {
+	margin-top: 40px;
+	margin-bottom: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+
+  .btn_right button {
+	font-family: 'CookieRun-Regular';
+	font-size: 16px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	padding: 13px 40px 13px;
+	outline: 0;
+	border: 1px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0);
+	
+  }
+  
+  .btn_right button::after {
+	content: "";
+	background-color: #7be1e2;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	height: 100%;
+	top: 7px;
+	left: 7px;
+	transition: 0.2s;
+	border-radius: 5px;
+	
+
+  }
+  
+  .btn_right button:hover::after {
+	top: 0px;
+	left: 0px;
+  }
+
+  /* 페이지 */
+  .page_wrapper {
+	width: 100%;
+	margin-top: 40px;
+  }
+  
+  .pagination {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+  }
+  
+  .page-item i {
+	font-size: 10px;
+	color: black;
+  }
+  
+  .page-item a {
+	font-size: 12px;
+  }
+  
+  .page-item .page-select {
+	font-weight: bold;
+  }
+
+  .search {
+	position: relative;
+	width: 300px;
+  }
+  
+  .search input {
+	width: 100%;
+	border: 1px solid #bbb;
+	border-radius: 8px;
+	padding: 10px 12px;
+	font-size: 14px;
+	margin-bottom: 15px;
+  }
+  
+  .search ion-icon {
+	position : absolute;
+	width: 17px;
+	top: 10px;
+	right: 12px;
+	margin: 0;
+  }

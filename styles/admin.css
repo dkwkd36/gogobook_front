@@ -35,8 +35,15 @@
 
 .sidemenu a {
 	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
 }
 
+.sidemenu a ion-icon {
+	font-size: 25px;
+}
 
 .sidemenu__header{
 	display: flex;

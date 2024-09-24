@@ -181,6 +181,10 @@ img {
 	color: #353535;
 	vertical-align: middle;
   }
+
+  tbody td a{
+	color: #353535;
+  }
   
   tbody img {
 	width: 60px;
@@ -248,6 +252,7 @@ img {
 	border-radius: 3px;
 	cursor: pointer;
 	transition: all 0.1s ease-out;
+	color: #353535;
   }
   
   .btn_left a:hover {
@@ -271,6 +276,7 @@ img {
 	border-radius: 3px;
 	cursor: pointer;
 	transition: all 0.1s ease-out;
+	color: #353535;
   }
   
   .btn_right a:hover {

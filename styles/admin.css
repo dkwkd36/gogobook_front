@@ -244,44 +244,11 @@ img {
 	justify-content: space-between;
 	margin-bottom: 20px;
   }
-  
-  .btn_left {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-  }
-  
-  .btn_left p {
-	font-size: 14px;
-	font-weight: bold;
-	color: #353535;
-	margin-right: 10px;
-  }
-  
-  .btn_left a {
-	width: 90px;
-	margin: 10px 4px;
-	border: 1px solid #dfdfdf;
-	background: #fff;
-	font-size: 12px;
-	padding: 5px 0;
-	text-align: center;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: all 0.1s ease-out;
-	color: #353535;
-  }
-  
-  .btn_left a:hover {
-	border: 1px solid #333;
-  }
-  
   .btn_right {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
   }
-  
   .btn_right a {
 	width: 120px;
 	margin: 10px 4px;

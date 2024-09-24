@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/book_detail.css" />
+    <script src="scripts/header.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>고고북</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__contents">
+        <div class="logo">
+          <a href="main.html">
+            <img src="image/logo1.png" alt="고고북" />
+          </a>
+        </div>
+        <div class="leftCategory">
+          <a href="market.html">북마켓</a>
+          <a href="notice.html">공지사항</a>
+          <a href="qna.html">문의</a>
+        </div>
+        <div class="rightCategory">
+          <div class="menuToggle iconBtn">
+            <ion-icon name="grid-outline"></ion-icon>
+          </div>
+          <div class="menu">
+            <ul>
+              <li style="--i: 0.1s">
+                <a href="login.html"
+                  ><ion-icon name="log-in-outline"></ion-icon
+                ></a>
+              </li>
+              <li style="--i: 0.1s">
+                <a href="wishlist.html"
+                  ><ion-icon name="heart-outline"></ion-icon
+                ></a>
+              </li>
+              <li style="--i: 0.1s">
+                <a href="modify.html"
+                  ><ion-icon name="person-outline"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="iconBtn">
+            <a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+          </div>
+          <div class="searchBtn iconBtn">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <div class="searchWrap">
+            <form action="book_search.html" method="get">
+              <input style="--i: 0.1s" type="text" />
+              <button style="--i: 0.1s" type="submit">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BOOK INFORMATION-->
+    <div class="container">
+      <div class="wrapper">
+        <div class="book_info">
+          <div class="book_img">
+            <img src="image/book.jpeg" />
+          </div>
+          <div class="info_wrapper">
+            <div class="info">
+              <div class="info_group">
+                <p class="info_title">상품명</p>
+                <p class="info_subscription">아주 작은 습관의 힘</p>
+              </div>
+              <div class="info_group">
+                <p class="info_title">제작 / 출판</p>
+                <p class="info_subscription">제임스 클리어 / 비즈니스북스</p>
+              </div>
+              <div class="info_group">
+                <p class="info_title">쪽수</p>
+                <p class="info_subscription">360p</p>
+              </div>
+              <div class="info_group">
+                <p class="info_title">판매가</p>
+                <p class="info_subscription"><strong>&#8361;14,000</strong></p>
+              </div>
+            </div>
+            <form action="payment.html">
+              <div class="quantity">
+                <p class="quantity_title">아주 작은 습관의 힘</p>
+                <input type="number" value="1" min="1" />
+                <p class="quantity_price"><strong>&#8361;14,000</strong></p>
+              </div>
+              <div class="total">
+                <p class="total_price"><strong>&#8361;14,000</strong></p>
+              </div>
+              <div class="buy_button">
+                <button type="submit">구매하기</button>
+              </div>
+            </form>
+            <div class="buttons">
+              <a href="#">장바구니 담기</a>
+              <a href="#">관심상품 등록</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOK DETAIL-->
+    <div class="detail_container">
+      <div class="detail_wrapper">
+        <div class="title">
+          <p>아주 작은 습관의 힘</p>
+        </div>
+        <div class="content_wrapper">
+          <p class="subtitle">We recommend for</p>
+          <p class="description">설명입니다</p>
+        </div>
+        <div class="content_wrapper">
+          <p class="subtitle">Introduction about the book</p>
+          <p class="description">
+            더 이상 아무것도 할 수 없을 것 같았던 때 조금씩 시도한 아주 작은
+            일들이 삶을 바꿨다! 단계적이고 체계적인 자기계발 방법을 찾는
+            사람들을 위한 『아주 작은 습관의 힘』. 고교 시절 촉망받는
+            야구선수였던 저자는 연습 중 동료의 야구 배트에 얼굴을 정통으로
+            강타당하는 큰 사고를 당했고, 걸을 수조차 없었던 저자는 절망에 빠지는
+            대신 지금 당장 할 수 있는 아주 작은 일이라도 찾아 그것을 반복하자고
+            마음먹었다. 그 후 매일 걷기 연습을 해서 6개월 만에 운동을 할 수 있게
+            되었고, 6년 후에는 대학 최고 남자 선수가 되었다.
+          </p>
+        </div>
+        <div class="content_wrapper">
+          <p class="subtitle">Table of Contents</p>
+          <p class="description">목차입니다</p>
+        </div>
+        <div class="comment_container">
+          <div class="subtitle">REVIEW</div>
+          <div class="comment_wrapper">
+            <div class="comment_group">
+              <div class="comment_top">
+                <strong class="name">고고북</strong>
+                <span class="date">2024-08-17</span>
+              </div>
+              <div class="comment">
+                <p>리뷰입니다.</p>
+              </div>
+            </div>
+            <div class="comment_group">
+              <div class="comment_top">
+                <strong class="name">고고북</strong>
+                <span class="date">2024-08-17</span>
+              </div>
+              <div class="comment">
+                <p>리뷰입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="" method="post">
+          <div class="comment_write_wrapper">
+            <textarea name="write_comment" id="write_comment"></textarea>
+            <button type="submit">확인</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

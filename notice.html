@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/notice.css" />
+    <script src="scripts/header.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>고고북</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__contents">
+        <div class="logo">
+          <a href="main.html">
+            <img src="image/logo1.png" alt="고고북" />
+          </a>
+        </div>
+        <div class="leftCategory">
+          <a href="market.html">북마켓</a>
+          <a href="notice.html">공지사항</a>
+          <a href="qna.html">문의</a>
+        </div>
+        <div class="rightCategory">
+          <div class="menuToggle iconBtn">
+            <ion-icon name="grid-outline"></ion-icon>
+          </div>
+          <div class="menu">
+            <ul>
+              <li style="--i: 0.1s">
+                <a href="login.html"
+                  ><ion-icon name="log-in-outline"></ion-icon
+                ></a>
+              </li>
+              <li style="--i: 0.1s">
+                <a href="wishlist.html"
+                  ><ion-icon name="heart-outline"></ion-icon
+                ></a>
+              </li>
+              <li style="--i: 0.1s">
+                <a href="modify.html"
+                  ><ion-icon name="person-outline"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="iconBtn">
+            <a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+          </div>
+          <div class="searchBtn iconBtn">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <div class="searchWrap">
+            <form action="book_search.html" method="get">
+              <input style="--i: 0.1s" type="text" />
+              <button style="--i: 0.1s" type="submit">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--NOTICE -->
+    <div class="container">
+      <div class="wrapper">
+        <div class="title">
+          <h2>고고북 공지사항</h2>
+        </div>
+        <div class="notice_wrapper">
+          <table>
+            <colgroup>
+              <col style="width: 70px" />
+              <col style="width: auto" />
+              <col style="width: 84px" />
+              <col style="width: 74px" />
+              <col style="width: 55px" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조회</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10</td>
+                <td class="subject">
+                  <a href="notice_read.html"> 글 제목 구합니다 </a>
+                </td>
+                <td>고고북</td>
+                <td class="date">2024-08-17</td>
+                <td class="viewCount">100</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td class="subject">
+                  <a href="notice_read.html"> 글 제목 구합니다 </a>
+                </td>
+                <td>고고북</td>
+                <td class="date">2024-08-17</td>
+                <td class="viewCount">100</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td class="subject">
+                  <a href="notice_read.html"> 글 제목 구합니다 </a>
+                </td>
+                <td>고고북</td>
+                <td class="date">2024-08-17</td>
+                <td class="viewCount">100</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="write_btn">
+            <a href="notice_write.html">글쓰기</a>
+          </div>
+          <div class="page_wrapper">
+            <ul class="pagination">
+              <li class="page-item">
+                <a href="#">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </a>
+              </li>
+              <li class="page-item">
+                <a href="#" class="page-link page-select">1</a>
+              </li>
+              <li class="page-item">
+                <a href="#">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

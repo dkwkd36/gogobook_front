@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/market.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="scripts/header.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>고고북</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__contents">
+        <div class="logo">
+          <a href="main.html">
+            <img src="image/logo1.png" alt="고고북" />
+          </a>
+        </div>
+        <div class="leftCategory">
+          <a href="market.html">북마켓</a>
+          <a href="notice.html">공지사항</a>
+          <a href="qna.html">문의</a>
+        </div>
+        <div class="rightCategory">
+          <div class="menuToggle iconBtn">
+            <ion-icon name="grid-outline"></ion-icon>
+          </div>
+          <div class="menu">
+            <ul>
+              <li style="--i: 0.1s">
+                <a href="login.html"
+                  ><ion-icon name="log-in-outline"></ion-icon
+                ></a>
+              </li>
+              <li style="--i: 0.1s">
+                <a href="wishlist.html"
+                  ><ion-icon name="heart-outline"></ion-icon
+                ></a>
+              </li>
+              <li style="--i: 0.1s">
+                <a href="modify.html"
+                  ><ion-icon name="person-outline"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="iconBtn">
+            <a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+          </div>
+          <div class="searchBtn iconBtn">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <div class="searchWrap">
+            <form action="book_search.html" method="get">
+              <input style="--i: 0.1s" type="text" />
+              <button style="--i: 0.1s" type="submit">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MARKET-->
+    <div class="container">
+      <div class="wrapper">
+        <div class="title">
+          <h2>북마켓</h2>
+        </div>
+        <div class="category">
+          <a href="#">문학</a>
+          <a href="#">IT</a>
+          <a href="#">경제</a>
+          <a href="#">자기계발서</a>
+        </div>
+
+        <div class="books_wrapper">
+          <div class="book_card">
+            <div class="imgBx">
+              <img
+                src="image/book.jpeg"
+                alt="book"
+                onclick="location.href='book_detail.html'"
+              />
+            </div>
+            <div class="contentBx">
+              <h2>아주 작은 습관의 힘</h2>
+              <div class="maker">
+                <h3>제임스 클리어 / 비즈니스 북스</h3>
+              </div>
+              <div class="price">
+                <h3>&#8361;14,000</h3>
+              </div>
+              <div class="buttonBx">
+                <a href="#"
+                  ><ion-icon class="like" name="heart-outline"></ion-icon
+                ></a>
+                <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                <a href="book_detail.html"
+                  ><ion-icon name="add-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="book_card">
+            <div class="imgBx">
+              <img
+                src="image/book2.jpg"
+                alt="book"
+                onclick="location.href='book_detail.html'"
+              />
+            </div>
+            <div class="contentBx">
+              <h2>아주 작은 습관의 힘</h2>
+              <div class="maker">
+                <h3>제임스 클리어 / 비즈니스 북스</h3>
+              </div>
+              <div class="price">
+                <h3>&#8361;14,000</h3>
+              </div>
+              <div class="buttonBx">
+                <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                <a href="book_detail.html"
+                  ><ion-icon name="add-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="book_card">
+            <div class="imgBx">
+              <img
+                src="image/book3.jpg"
+                alt="book"
+                onclick="location.href='book_detail.html'"
+              />
+            </div>
+            <div class="contentBx">
+              <h2>아주 작은 습관의 힘</h2>
+              <div class="maker">
+                <h3>제임스 클리어 / 비즈니스 북스</h3>
+              </div>
+              <div class="price">
+                <h3>&#8361;14,000</h3>
+              </div>
+              <div class="buttonBx">
+                <a href="#"
+                  ><ion-icon class="like" name="heart-outline"></ion-icon
+                ></a>
+                <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                <a href="book_detail.html"
+                  ><ion-icon name="add-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="book_card">
+            <div class="imgBx">
+              <img
+                src="image/book4.jpg"
+                alt="book"
+                onclick="location.href='book_detail.html'"
+              />
+            </div>
+            <div class="contentBx">
+              <h2>아주 작은 습관의 힘</h2>
+              <div class="maker">
+                <h3>제임스 클리어 / 비즈니스 북스</h3>
+              </div>
+              <div class="price">
+                <h3>&#8361;14,000</h3>
+              </div>
+              <div class="buttonBx">
+                <a href="#"
+                  ><ion-icon class="like" name="heart-outline"></ion-icon
+                ></a>
+                <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                <a href="book_detail.html"
+                  ><ion-icon name="add-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page_wrapper">
+          <ul class="pagination">
+            <li class="page-item">
+              <a href="#">
+                <i class="fa-solid fa-chevron-left"></i>
+              </a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link page-select">1</a>
+            </li>
+            <li class="page-item">
+              <a href="#">
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

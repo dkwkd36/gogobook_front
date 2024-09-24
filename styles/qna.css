@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Orbit&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "CookieRun-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "CookieRun-Regular";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  z-index: 99;
+}
+
+.header__contents {
+  width: 100%;
+  max-width: 1320px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  margin-left: 20px;
+  height: 80px;
+  flex: 0.1;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.leftCategory {
+  display: flex;
+  flex-direction: row;
+  flex: 0.8;
+  margin-left: 70px;
+  gap: 30px;
+}
+
+.leftCategory a {
+  font-family: "CookieRun-Regular";
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+  height: 30px;
+}
+
+.leftCategory a:hover {
+  color: #02b4a9;
+  transform: translateY(-5px);
+}
+
+.rightCategory {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 20px;
+}
+
+.rightCategory .iconBtn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+}
+
+.rightCategory .iconBtn:hover ion-icon {
+  color: #02b4a9;
+}
+
+.rightCategory ion-icon {
+  font-size: 28px;
+}
+
+.menuToggle.active {
+  color: #02b4a9;
+}
+
+.menu {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 70px;
+  bottom: 0px;
+  z-index: -1;
+  transition: transform 0.5s, width 0.5s, height 0.5s;
+  transition-delay: 1s, 0.5s, 0.5s;
+}
+
+.menuToggle.active ~ .menu {
+  width: 240px;
+  height: 70px;
+  z-index: 2;
+  transform: translateY(100px) translateX(-100px);
+  transition-delay: 0s, 0.5s, 0.5s;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  gap: 40px;
+}
+
+.menu ul li {
+  list-style: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+  transform: translateY(-30px);
+  transition: 0.25s;
+  transition-delay: calc(0s + var(--i));
+}
+
+.menuToggle.active ~ .menu ul li {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition-delay: calc(0.75s + var(--i));
+}
+
+.menu ul li a {
+  display: block;
+  font-size: 2em;
+  text-decoration: none;
+  color: #555;
+}
+
+.menu ul li:hover a {
+  color: #7be1e2;
+}
+
+.searchBtn.active ion-icon {
+  color: #7be1e2;
+}
+
+.searchWrap {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 70px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  transition: transform 0.5s, width 0.5s, height 0.5s;
+  transition-delay: 1s, 0.5s, 0.5s;
+}
+
+.searchBtn.active ~ .searchWrap {
+  width: 450px;
+  height: 60px;
+  z-index: -1;
+  transform: translateY(100px);
+  transition-delay: 0s, 0.5s, 0.5s;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.searchWrap form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.searchWrap form input,
+.searchWrap form button {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+  transform: translateY(-30px);
+  transition-delay: calc(0s + var(--i));
+}
+
+.searchBtn.active ~ .searchWrap form input,
+.searchBtn.active ~ .searchWrap form button {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition-delay: calc(0.75s + var(--i));
+}
+
+.searchWrap input {
+  color: #000;
+  border: 0;
+  border-bottom: 2px dotted #02b4a9;
+  border-radius: 0;
+  outline: none;
+  line-height: 24px;
+  height: 30px;
+  width: 400px;
+  margin: 20px;
+  padding: 5px;
+  font-size: 24px;
+  font-family: "CookieRun-Regular";
+  background: rgba(0, 0, 0, 0);
+}
+
+.searchWrap input:focus {
+  outline: none;
+}
+
+.searchWrap button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+.searchWrap button:hover ion-icon {
+  color: #02b4a9;
+}
+
+/* QNA */
+.container {
+  margin-top: 180px;
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.title h2 {
+  font-size: 24px;
+  text-align: center;
+  font-family: "CookieRun-Regular";
+  font-weight: 600;
+  font-style: normal;
+}
+
+.notice_wrapper {
+  width: 80%;
+}
+
+table {
+  width: 100%;
+  border-top: 1px solid #d7d5d5;
+  border-bottom: 1px solid #d7d5d5;
+}
+
+thead th {
+  padding: 15px 0;
+  font-size: 12px;
+  color: #353535;
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+tbody td {
+  padding: 15px 0;
+  border-top: 1px solid #dfdfdf;
+  font-family: "CookieRun-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #555;
+  text-align: center;
+  vertical-align: middle;
+}
+
+tbody td.subject {
+  padding-left: 10px;
+  text-align: left;
+}
+
+tbody td.subject a {
+  color: #555;
+}
+
+tbody td.subject a:hover {
+  color: #02b4a9;
+}
+
+tbody td.date,
+tbody td.viewCount {
+  font-size: 12px;
+  color: #939393;
+}
+
+.write_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 20px 10px 20px;
+}
+
+.write_btn a {
+  width: 85px;
+  margin: 10px 4px;
+  border: 1px solid #dfdfdf;
+  background: #fff;
+  font-size: 12px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.write_btn a:hover {
+  border: 1px solid #02b4a9;
+  color: #02b4a9;
+}
+
+.page_wrapper {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.page-item i {
+  font-size: 10px;
+  color: #939393;
+}
+
+.page-item a {
+  font-size: 12px;
+}
+
+.page-item .page-select {
+  font-weight: bold;
+}

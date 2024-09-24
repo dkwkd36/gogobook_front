@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/book_modify.css" />
+    <script src="scripts/header.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>고고북</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__contents">
+        <div class="logo">
+          <a href="main.html">
+            <img src="image/logo1.png" alt="고고북" />
+          </a>
+        </div>
+        <div class="leftCategory">
+          <a href="market.html">북마켓</a>
+          <a href="notice.html">공지사항</a>
+          <a href="qna.html">문의</a>
+        </div>
+        <div class="rightCategory">
+          <div class="menuToggle iconBtn">
+            <ion-icon name="grid-outline"></ion-icon>
+          </div>
+          <div class="menu">
+            <ul>
+              <li style="--i: 0.1s">
+                <a href="login.html"
+                  ><ion-icon name="log-in-outline"></ion-icon
+                ></a>
+              </li>
+              <li style="--i: 0.1s">
+                <a href="wishlist.html"
+                  ><ion-icon name="heart-outline"></ion-icon
+                ></a>
+              </li>
+              <li style="--i: 0.1s">
+                <a href="modify.html"
+                  ><ion-icon name="person-outline"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="iconBtn">
+            <a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+          </div>
+          <div class="searchBtn iconBtn">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <div class="searchWrap">
+            <form action="book_search.html" method="get">
+              <input style="--i: 0.1s" type="text" />
+              <button style="--i: 0.1s" type="submit">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- WRITE -->
+    <div class="container">
+      <div class="wrapper">
+        <div class="title">
+          <h2>상품수정</h2>
+        </div>
+        <div class="write_section">
+          <form action="notice.html">
+            <div class="form_subject">
+              <label for="book_name">상품명</label>
+              <input
+                type="text"
+                id="book_name"
+                name="book_name"
+                value="아주 작은 습관의 힘"
+                class="form-control"
+              />
+            </div>
+            <div class="form_subject">
+              <label for="book_author">저자</label>
+              <input
+                type="text"
+                id="book_make"
+                name="book_make"
+                value="제임스 클리어"
+                class="form-control"
+              />
+            </div>
+            <div class="form_subject">
+              <label for="book_make">출판</label>
+              <input
+                type="text"
+                id="book_make"
+                name="book_make"
+                value="비즈니스북스"
+                class="form-control"
+              />
+            </div>
+            <div class="form_subject">
+              <label for="book_page">쪽수</label>
+              <input
+                type="text"
+                id="book_page"
+                name="book_page"
+                value="360p"
+                class="form-control"
+              />
+            </div>
+            <div class="form_subject">
+              <label for="book_price">가격</label>
+              <input
+                type="text"
+                id="book_price"
+                name="book_price"
+                value="14000"
+                class="form-control"
+              />
+            </div>
+            <div class="form_group">
+              <label for="qna_content">추천이유</label>
+              <textarea
+                id="qna_content"
+                name="qna_content"
+                class="form-control"
+                rows="20"
+                style="resize: none"
+              >
+설명입니다</textarea
+              >
+            </div>
+            <div class="form_group">
+              <label for="qna_content">책 소개</label>
+              <textarea
+                id="qna_content"
+                name="qna_content"
+                class="form-control"
+                rows="20"
+                style="resize: none"
+              >
+더 이상 아무것도 할 수 없을 것 같았던 때 조금씩 시도한 아주 작은 일들이 삶을 바꿨다! 단계적이고 체계적인 자기계발 방법을 찾는 사람들을 위한 『아주 작은 습관의 힘』. 고교 시절 촉망받는 야구선수였던 저자는 연습 중 동료의 야구 배트에 얼굴을 정통으로 강타당하는 큰 사고를 당했고, 걸을 수조차 없었던 저자는 절망에 빠지는 대신 지금 당장 할 수 있는 아주 작은 일이라도 찾아 그것을 반복하자고 마음먹었다. 그 후 매일 걷기 연습을 해서 6개월 만에 운동을 할 수 있게 되었고, 6년 후에는 대학 최고 남자 선수가 되었다.</textarea
+              >
+            </div>
+            <div class="form_group">
+              <label for="qna_content">목차</label>
+              <textarea
+                id="qna_content"
+                name="qna_content"
+                class="form-control"
+                rows="20"
+                style="resize: none"
+              >
+목차입니다</textarea
+              >
+            </div>
+            <div class="form_subject book_image_form">
+              <label for="book_image">첨부 이미지</label>
+              <input
+                type="file"
+                id="book_image"
+                name="book_image"
+                class="form-control"
+                required
+                accept="image/*"
+              />
+            </div>
+            <div class="buttons">
+              <a href="market.html">목록</a>
+              <button type="submit">수정</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <script src="scripts/header.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="scripts/login.js" defer></script>
+    <script
+      src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"
+      defer
+    ></script>
+    <script src="./scripts/postcode.js" defer></script>
+    <script src="./scripts/phone.js"></script>
+    <title>고고북</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__contents">
+        <div class="logo">
+          <a href="main.html">
+            <img src="image/logo1.png" alt="고고북" />
+          </a>
+        </div>
+        <div class="leftCategory">
+          <a href="market.html">북마켓</a>
+          <a href="notice.html">공지사항</a>
+          <a href="qna.html">문의</a>
+        </div>
+        <div class="rightCategory">
+          <div class="menuToggle iconBtn">
+            <ion-icon name="grid-outline"></ion-icon>
+          </div>
+          <div class="menu">
+            <ul>
+              <li style="--i: 0.1s">
+                <a href="login.html"
+                  ><ion-icon name="log-in-outline"></ion-icon
+                ></a>
+              </li>
+              <li style="--i: 0.1s">
+                <a href="wishlist.html"
+                  ><ion-icon name="heart-outline"></ion-icon
+                ></a>
+              </li>
+              <li style="--i: 0.1s">
+                <a href="modify.html"
+                  ><ion-icon name="person-outline"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="iconBtn">
+            <a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+          </div>
+          <div class="searchBtn iconBtn">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <div class="searchWrap">
+            <form action="book_search.html" method="get">
+              <input style="--i: 0.1s" type="text" />
+              <button style="--i: 0.1s" type="submit">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Login -->
+    <div class="wrapper">
+      <div class="container">
+        <div class="sign-up-container">
+          <form class="sign-form">
+            <h1>회원가입</h1>
+            <input type="text" placeholder="이름" />
+            <input type="text" placeholder="아아디" />
+            <input type="password" placeholder="비밀번호" />
+            <input type="text" placeholder="비밀번호 확인" />
+            <div class="postcode">
+              <input type="text" id="user_postcode" placeholder="우편번호" />
+              <button type="button" onclick="sample6_execDaumPostcode()">
+                우편번호
+              </button>
+            </div>
+            <input type="text" id="default_address" placeholder="기본주소" />
+            <input type="text" id="detail_address" placeholder="상세주소" />
+            <div class="form_group form_phone">
+              <input
+                type="text"
+                id="phone1"
+                placeholder="010"
+                onchange="changePhone1()"
+                onkeyup="onchange()"
+              />
+              &nbsp;-&nbsp;
+              <input
+                type="text"
+                id="phone2"
+                placeholder="1111"
+                onchange="changePhone2()"
+                onkeyup="onchange()"
+              />
+              &nbsp;-&nbsp;
+              <input type="text" id="phone3" placeholder="1111" />
+            </div>
+            <button class="form_btn">회원가입</button>
+          </form>
+        </div>
+        <div class="sign-in-container">
+          <form class="sign-form">
+            <h1>로그인</h1>
+            <input type="text" placeholder="아이디" />
+            <input type="password" placeholder="비밀번호" />
+            <button class="form_btn">로그인</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay-left">
+            <h1>환영합니다</h1>
+            <p>정보를 입력한 후에 고고북에서의 <br />여행을 시작해 주세요!</p>
+            <button id="signIn" class="overlay_btn">로그인</button>
+          </div>
+          <div class="overlay-right">
+            <h1>안녕하세요</h1>
+            <p>고고북에서 함께 멋진 경험 하시기를 <br />기다리고 있습니다!</p>
+            <button id="signUp" class="overlay_btn">회원가입</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="./scripts/carousel.js" defer></script>
+    <script src="scripts/swiper-bundle.min.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>고고북</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__contents">
+        <div class="logo">
+          <a href="main.html">
+            <img src="image/logo1.png" alt="고고북" />
+          </a>
+        </div>
+        <div class="leftCategory">
+          <a href="market.html">북마켓</a>
+          <a href="notice.html">공지사항</a>
+          <a href="qna.html">문의</a>
+        </div>
+        <div class="rightCategory">
+          <div class="menuToggle iconBtn">
+            <ion-icon name="grid-outline"></ion-icon>
+          </div>
+          <div class="menu">
+            <ul>
+              <li style="--i:0.1s;"><a href="login.html"><ion-icon name="log-in-outline"></ion-icon></a></li>
+              <li style="--i:0.1s;"><a href="wishlist.html"><ion-icon name="heart-outline"></ion-icon></a></li>
+              <li style="--i:0.1s;"><a href="modify.html"><ion-icon name="person-outline"></ion-icon></a></li>
+            </ul>
+          </div>
+          <div class="iconBtn">
+            <a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+          </div>
+          <div class="searchBtn iconBtn">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <div class="searchWrap">
+            <form action="book_search.html" method="get">
+                <input style="--i:0.1s;" type="text" />
+                <button style="--i:0.1s;" type="submit">
+                  <ion-icon name="search-outline"></ion-icon>
+                </button>        
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="mainBanner swiper">
+      <div class="carousel_wrapper swiper-wrapper">
+        <div class="carousel_slide swiper-slide">
+          <img src="image/banner1.png"  />
+        </div>
+        <div class="carousel_slide swiper-slide">
+          <img src="image/banner2.png" />
+        </div>
+        <div class="carousel_slide swiper-slide">
+          <img src="image/banner3.png" />
+        </div>
+      </div>
+
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="books_container">
+      <div class="title">
+        <h2>베스트 도서</h2>
+      </div>
+      <div class="books__images">
+        <div class="books__swiper swiper">
+          <div class="swiper-wrapper">
+            <article class="books__article swiper-slide">
+              <a href="book_detail.html">
+                <img src="image/book.jpeg" class="books_img">
+              </a>
+              <a href="book_detail.html">
+                <p class="book_title">아주 작은 습관의힘</p>
+              </a>
+              <p class="book_price">&#8361;14,000</p>
+            </article>
+            <article class="books__article swiper-slide">
+              <a href="book_detail.html">
+                <img src="image/book2.jpg" class="books_img">
+              </a>
+              <a href="book_detail.html">
+                <p class="book_title">비전공자를 위한 이해할 수 있는 IT지식</p>
+              </a>
+              <p class="book_price">&#8361;15,120</p>
+            </article>
+            <article class="books__article swiper-slide">
+              <a href="book_detail.html">
+                <img src="image/book3.jpg" class="books_img">
+              </a>
+              <a href="book_detail.html">
+                <p class="book_title">트렌드 코리아2024</p>
+              </a>
+              <p class="book_price">&#8361;17,100</p>
+            </article>
+            <article class="books__article swiper-slide">
+              <a href="book_detail.html">
+                <img src="image/book4.jpg" class="books_img">
+              </a>
+              <a href="book_detail.html">
+                <p class="book_title">원씽</p>
+              </a>
+              <p class="book_price">&#8361;15,120</p>
+            </article>      
+          </div>
+        </div>
+      </div>
+      
+      <div class="more">
+        <button type="button" onclick="location.href= 'market.html'">더보기</button>
+      </div>
+    </div>
+    
+  </body>
+</html>

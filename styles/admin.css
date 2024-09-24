@@ -172,6 +172,8 @@ img {
 	width: 100%;
 	border-top: 1px solid #d7d5d5;
 	border-bottom: 1px solid #d7d5d5;
+	border-collapse: collapse;
+
   }
   
   thead th {
@@ -181,10 +183,18 @@ img {
 	font-weight: 300;
 	vertical-align: middle;
   }
+
+  tbody tr {
+	border-radius: 5px;
+  }
+
+  tbody tr:nth-child(odd) {
+	background-color: #e9e9e9;
+  }
+
   
   tbody td {
 	padding: 15px 10px;
-	border-top: 1px solid #dfdfdf;
 	color: #353535;
 	vertical-align: middle;
   }

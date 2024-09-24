@@ -19,7 +19,7 @@
 	width: 100vw;
 	height: 100vh;
 	display: flex;
-	background-color: white;
+	
 }
 
 .sidemenu {
@@ -202,6 +202,7 @@ img {
 
   tbody td a{
 	color: #353535;
+	font-family: 'CookieRun-Regular';
   }
   
   tbody img {
@@ -228,45 +229,65 @@ img {
 	margin: 1px 0;
 	border: 1px solid #dfdfdf;
 	background: #fff;
-	font-size: 12px;
+	font-size: 13px;
+	font-weight: 300;
 	padding: 5px 0;
 	text-align: center;
-	border-radius: 3px;
+	border-radius: 8px;
+	display: inline-block;
 	cursor: pointer;
-	transition: all 0.1s ease-out;
+	transition: all 0.2s ease-out;
+	font-family: 'CookieRun-Regular';
+	
+
   }
   
   .button a:hover {
-	border: 1px solid #333;
+	border: 1px solid #01d5f1;
+	color: #02b4a9;
   }
+    
   
-  .btn_wrapper {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-bottom: 20px;
-  }
   .btn_right {
+	margin-top: 40px;
+	margin-bottom: 60px;
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
 	align-items: center;
   }
-  .btn_right a {
-	width: 120px;
-	margin: 10px 4px;
-	border: 1px solid #dfdfdf;
-	background: #fff;
-	font-size: 12px;
-	padding: 7px 0;
-	text-align: center;
-	border-radius: 3px;
+
+
+  .btn_right button {
+	font-family: 'CookieRun-Regular';
+	font-size: 16px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	padding: 13px 40px 13px;
+	outline: 0;
+	border: 1px solid black;
+	border-radius: 5px;
 	cursor: pointer;
-	transition: all 0.1s ease-out;
-	color: #353535;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0);
+	
   }
   
-  .btn_right a:hover {
-	border: 1px solid #333;
+  .btn_right button::after {
+	content: "";
+	background-color: #7be1e2;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	height: 100%;
+	top: 7px;
+	left: 7px;
+	transition: 0.2s;
+	border-radius: 5px;
+	
+
   }
   
+  .btn_right button:hover::after {
+	top: 0px;
+	left: 0px;
+  }

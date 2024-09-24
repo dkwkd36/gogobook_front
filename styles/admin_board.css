@@ -85,10 +85,6 @@ img {
 	color: white;
 }
 
-.body__detail a {
-	width: 100%;
-}
-
 .body__detail:hover {
 	background-color: white;
 	border-radius: 28px;
@@ -181,7 +177,15 @@ img {
   }
   
   .wishlist_wrapper {
-	width: 50%;
+	width: 80%;
+  }
+
+
+  .tag button {
+	font-family: 'CookieRun-Regular';
+	border: none;
+	padding: 10px 15px 5px 15px;
+	border-radius: 5px 5px 0 0;
   }
   
   table {
@@ -189,7 +193,8 @@ img {
 	border-top: 1px solid #d7d5d5;
 	border-bottom: 1px solid #d7d5d5;
 	border-collapse: collapse;
-	
+	font-family: 'CookieRun-Regular';
+	text-align: center;
   }
   
   thead th {
@@ -202,6 +207,7 @@ img {
 
   tbody tr {
 	border-radius: 5px;
+	text-align: c;
   }
 
   tbody tr:nth-child(odd) {
@@ -213,6 +219,16 @@ img {
 	padding: 15px 10px;
 	color: #353535;
 	vertical-align: middle;
+  }
+
+  tbody td:nth-child(1) {
+	width: 5%;
+  }
+
+  tbody td:nth-child(2) {
+	width: 50%;
+	text-align: start;
+	padding-left: 40px;
   }
 
 

@@ -85,6 +85,10 @@ img {
 	color: white;
 }
 
+.body__detail a {
+	width: 100%;
+}
+
 .body__detail:hover {
 	background-color: white;
 	border-radius: 28px;
@@ -147,9 +151,11 @@ img {
 
 
   /* WISHLIST */
-  
+  .main {
+	margin-top: 40px;
+}
+
   .container {
-	margin-top: 5px;
 	width: 100%;
 	
   }
@@ -159,7 +165,6 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
   }
   
   .title {

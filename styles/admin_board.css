@@ -85,6 +85,10 @@ img {
 	color: white;
 }
 
+.body__detail a {
+	width: 100%;
+}
+
 .body__detail:hover {
 	background-color: white;
 	border-radius: 28px;
@@ -147,9 +151,11 @@ img {
 
 
   /* WISHLIST */
-  
+  .main {
+	margin-top: 40px;
+}
+
   .container {
-	margin-top: 5px;
 	width: 100%;
 	
   }
@@ -159,15 +165,13 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+
   }
   
   .title {
 	width: 266px;
 	margin-top: 10px;
-	margin-bottom: 50px;
-	
-	
+	margin-bottom: 50px;	
   }
   
   .title h2 {
@@ -176,16 +180,41 @@ img {
 	text-align: center;
   }
   
-  .wishlist_wrapper {
-	width: 80%;
+  .board_wrapper {
+	display: none;
   }
 
+  .board_wrapper.active {
+	width: 80%;
+	display: block;
+  }
+
+  .qna_wrapper {
+	display: none;
+  }
+
+  .qna_wrapper.active {
+  	width: 80%;
+	display: block;
+  }
 
   .tag button {
 	font-family: 'CookieRun-Regular';
 	border: none;
 	padding: 10px 15px 5px 15px;
 	border-radius: 5px 5px 0 0;
+	font-size: 18px;
+	cursor: pointer;
+  }
+
+  .notice.active {
+	background-color: #02b4a9;
+	color: white;
+  }
+
+  .qna.active {
+	background-color: #02b4a9;
+	color: white;
   }
   
   table {
@@ -199,10 +228,11 @@ img {
   
   thead th {
 	padding: 15px 0;
-	font-size: 12px;
+	font-size: 14px;
 	color: #353535;
 	font-weight: 300;
 	vertical-align: middle;
+	font-weight: bold;
   }
 
   tbody tr {
@@ -219,6 +249,7 @@ img {
 	padding: 15px 10px;
 	color: #353535;
 	vertical-align: middle;
+	font-size: 14px;
   }
 
   tbody td:nth-child(1) {

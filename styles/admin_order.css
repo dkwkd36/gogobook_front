@@ -224,10 +224,14 @@ img {
 	width: 15%;
   }
   tbody td:nth-child(4) {
-	width: 15%;
+	width: 40%;
   }
 
   tbody td:nth-child(6) {
+	width: 10%;
+  }
+
+  tbody td:nth-child(8) {
 	width: 10%;
   }
 
@@ -258,7 +262,6 @@ img {
   }
   
   .button {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
   }

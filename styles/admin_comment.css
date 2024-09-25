@@ -167,7 +167,6 @@ img {
 	margin-top: 10px;
 	margin-bottom: 50px;
 	
-	
   }
   
   .title h2 {
@@ -217,14 +216,13 @@ img {
 	font-size: 14px;
   }
 
+  tbody td:nth-child(3) {
+	width: 20%;
+  }
+
   tbody td:nth-child(4) {
 	width: 15%;
   }
-
-  tbody td:nth-child(5) {
-	width: 40%;
-  }
-
 
   tbody td a{
 	color: #353535;

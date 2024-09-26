@@ -265,6 +265,10 @@ img {
   tbody .like {
 	font-weight: bold;
   }
+
+  tbody .name {
+	font-weight: bold;
+  }
   
   .button {
 	flex-direction: column;

@@ -150,13 +150,14 @@ img {
 }
 
 
-  /* WISHLIST */
+  /* whislist*/
   .main {
 	margin-top: 40px;
 }
 
   .container {
 	width: 100%;
+
 	
   }
   
@@ -179,9 +180,47 @@ img {
 	font-size: 24px;
 	text-align: center;
   }
-  
-  .wishlist_wrapper {
+
+ 
+
+  .review_wrapper {
 	width: 85%;
+	display: none;
+  }
+
+ .review_wrapper.active{
+	width: 80%;
+	display: block;
+ }
+ 
+  .qna_wrapper {
+	display: none;
+	width: 85%;
+  }
+
+
+  .qna_wrapper.active {
+  	width: 80%;
+	display: block;
+  }
+
+  .tag button {
+	font-family: 'CookieRun-Regular';
+	border: none;
+	padding: 10px 15px 5px 15px;
+	border-radius: 5px 5px 0 0;
+	font-size: 18px;
+	cursor: pointer;
+  }
+
+  .notice.active {
+	background-color: #02b4a9;
+	color: white;
+  }
+
+  .qna.active {
+	background-color: #02b4a9;
+	color: white;
   }
   
   table {

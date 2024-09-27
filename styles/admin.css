@@ -190,6 +190,7 @@ img {
 	flex-direction: column;
 	background-color: white;
 	padding: 20px;
+	align-items: center;
   }
 
   .today_summary_left{
@@ -230,13 +231,64 @@ img {
   .name p{
 	font-size: 20px;
 	font-family: 'CookieRun-Regular';
-	margin-top: 20px;
+	margin-top: 10px;
+	
 	
   }
 
   .sales{
 	font-family: 'CookieRun-Regular';
-	font-size: 30px;
+	font-size: 20px;
 	flex: 1;
+	color: rgb(255, 255, 255);
+
   }
   
+  .book_sales{
+	font-family: 'CookieRun-Regular';
+	font-size: 20px;
+	flex: 1;
+	color: rgb(255, 255, 255);
+  }
+  
+  .people{
+	font-family: 'CookieRun-Regular';
+	font-size: 20px;
+	flex: 1;
+	color: rgb(255, 255, 255);
+  }
+  
+  .review{
+	font-family: 'CookieRun-Regular';
+	font-size: 20px;
+	flex: 1;
+	color: rgb(255, 255, 255);
+  }
+  
+.sales ion-icon {
+	background: rgb(250, 90, 125);
+	border-radius: 100%;
+	padding: 11px;
+}
+
+.book_sales ion-icon{
+	background-color: #FF947A ;
+	border-radius: 100%;
+	padding:11px;
+}
+
+.people ion-icon{
+	background-color: #3CD856;
+	border-radius: 100%;
+	padding:11px;
+}
+.review ion-icon{
+	background-color: #BF83FF;
+	border-radius: 100%;
+	padding:11px;
+  }
+
+.name .sub_title{
+	color: #425166;
+	font-size: 15px;
+}

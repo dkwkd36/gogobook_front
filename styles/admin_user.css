@@ -96,6 +96,7 @@ img {
 
 .body__detail:hover a {
 	color: #02b4a9;
+	color: #c3e9e6;
 }
 
 .body__detail.active {
@@ -202,6 +203,10 @@ img {
 	font-weight: bold;
   }
 
+  thead {
+	background-color: white;
+  }
+
   tbody tr {
 	border-radius: 5px;
   }
@@ -211,6 +216,9 @@ img {
 	
   }
 
+  tbody tr:nth-child(even) {
+	background-color: white;
+  }
   
   tbody td {
 	padding: 15px 10px;

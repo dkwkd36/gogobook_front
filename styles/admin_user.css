@@ -18,15 +18,23 @@
 
 .container {
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	display: flex;
-	
 }
+
+.fix {
+	height: 860px;
+	position: sticky;
+	top: 0;
+}
+
+
 
 .sidemenu {
 	display: flex;
 	flex-direction: column;
 	width: 266px;
+	height: 100%;
 	background: #02b4a9;
 	padding: 30px;
 	margin: 20px 10px;
@@ -96,7 +104,6 @@ img {
 
 .body__detail:hover a {
 	color: #02b4a9;
-	color: #c3e9e6;
 }
 
 .body__detail.active {
